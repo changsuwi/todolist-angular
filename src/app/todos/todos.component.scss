@@ -1,0 +1,58 @@
+.todolist {
+  margin-bottom: 30px;
+  min-height: 65vh;
+
+  @media (min-height: 667px) {
+    min-height: 70vh;
+  }
+
+  @media (min-height: 812px) {
+    min-height: 75vh;
+  }
+}
+
+.todo-item {
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding: 0px 10px;
+}
+
+p {
+  margin: 0px;
+}
+
+ul {
+  padding-inline-start: 0px;
+  margin: 0;
+}
+
+.todo-content {
+  flex-grow: 1;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+}
+
+.task-complete-checkbox {
+  margin-right: 15px;
+  transform: scale(1.5);
+}
+
+.delete-button {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+  display: flex;
+}
+
+.checked {
+  background-color: gray;
+
+  p {
+    text-decoration: line-through;
+  }
+
+}

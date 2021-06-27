@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TODOS } from './mock-todos'
+import { Todo } from './todo';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todolist-angular';
+  title = 'My To Do List'
+  todos = TODOS
+  addTodo(todo: Todo) {
+    this.todos.push(todo)
+  }
 }

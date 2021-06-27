@@ -1,0 +1,19 @@
+<div class="top">
+    <h2 class="title">{{title}}</h2>
+    <div class="add-todo-bar">
+        <input
+            class="add-todo-input"
+            type="text"
+            [(ngModel)] = "input"
+            placeholder="title..."
+        >
+        <button
+            class="btn btn-danger"
+            (click)="addTodo(input)"
+        >
+            Add
+        </button>
+    </div>
+    
+</div>
+

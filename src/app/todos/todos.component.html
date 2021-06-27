@@ -1,0 +1,14 @@
+<ul class="todo-list">
+  <li *ngFor="let todo of todos" [ngClass]="['todo-item', setTodoContentClass(todo.checked)]">
+    <div class="todo-content" id="{{'todo-' + todo.id}}">
+      <input
+        class="task-complete-checkbox"
+        type="checkbox"
+        (change)="onCheck(todo.id)"
+      >
+      <p>{{todo.title}}</p>
+    </div>
+    
+    <button class="delete-button" (click)="delete(todo.id)" type='button'>X</button>
+  </li>
+</ul>
